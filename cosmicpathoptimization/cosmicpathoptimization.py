@@ -1,4 +1,4 @@
-# import sys
+import sys
 import statistics
 from typing import List
 
@@ -18,6 +18,9 @@ def answer(temps: List[int]) -> int:
 def main() -> None:
     """Main function
     """
+    x = int(sys.stdin.readline())
+    temps = [int(y) for y in sys.stdin.readline().split(' ', x)]
+    print(answer(temps))
 
 
 if __name__ == "__main__":
